@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon" href="weather-app.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <main>
+            <div class="row" style="padding: 0 !important;">
+                <div class="col-12" style="padding: 0 !important;">
+                    <div class="a">
+                    <video class="video" id="clear" style="display: none; margin: 0 !important;" src="videos/clear.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="cloudy" style="display: none; margin: 0 !important;" src="videos/cloudy.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="rainy" style="display: none; margin: 0 !important;" src="videos/rainy.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="snowy" style="display: none; margin: 0 !important;" src="videos/snowy.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="sunny" style="display: none; margin: 0 !important;" src="videos/sunny.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="clear-night" style="display: none; margin: 0 !important;" src="videos/clear-night.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="rainy-night" style="display: none; margin: 0 !important;" src="videos/rainy-night.mp4"></video> 
+                    </div>
+                    <div class="a">
+                        <video class="video" id="cloudy-night" style="display: none; margin: 0 !important;" src="videos/cloudy-night.mp4"></video> 
+                    </div>    
+                </div>
+            </div>    
+            <div class="row" style="padding: 0 !important;">
+                <div class="infos">
+                    <div class="row text-center">
+                        <div class="searchArea">
+                            <form onsubmit="submitForm(event)">
+                                <label for="search" class="visually-hidden">Search</label>
+                                <input type="text" name="search" id="search" class="hidden-input" placeholder="Şehir Giriniz...">
+                                <button type="submit" class="btn">
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <h1 class="city"></h1>
+                        <span>
+                            <ul style="display: flex; list-style-type: none; align-items: center; justify-content: center; margin-bottom: 0;">
+                                <li>
+                                    <img src="" alt="" class="havaLogo">
+                                </li>
+                                <li style=" margin-left: 10px; margin-right: 30px;">
+                                    <h2 class="hava"></h2>
+                                </li>
+                            </ul>  
+                        </span>
+                        <h3 class="durum"></h3>
+                        <h4 class="nem"></h4>
+                        <h5 class="rüzgar" style="margin-bottom: 25px !important;"></h5>
+                    </div>    
+                </div>
+            </div>  
+            
+    </main>
+
+
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
